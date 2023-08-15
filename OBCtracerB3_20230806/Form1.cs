@@ -62,21 +62,21 @@ namespace OBCtracerB3_20230806
 
                     }
 
-                    if (xElement.Element("Altele").Element("TrafCLC").Value.Length >= 1)
+                    if (xElement.Element("Altele").Element("Traf_CLLLC").Value.Length >= 1)
                     {
                         f1 = true;
-                        uti.TrafCLC = (string)xElement.Element("Altele").Element("TrafCLC");
-                        oraTrafCLC = (string)xElement.Element("oraAsamblare").Element("oraTrafCLC");
+                        uti.TrafCLC = (string)xElement.Element("Altele").Element("TrafCLLLC");
+                        oraTrafCLC = (string)xElement.Element("oraAsamblare").Element("oraTrafCLLLC");
                         txtTLLC.Text = uti.TrafCLC;
                         txtTLLC.BackColor = Color.LightGreen;
                         txtTLLC.ReadOnly = true;
 
                     }
-                    if (xElement.Element("Altele").Element("TrafDC").Value.Length > 1)
+                    if (xElement.Element("Altele").Element("Traf_DCDC").Value.Length > 1)
                     {
                         f2 = true;
-                        uti.TrafDC = (string)xElement.Element("Altele").Element("TrafDC");
-                        oraTrafDC = (string)xElement.Element("oraAsamblare").Element("oraTrafDC");
+                        uti.TrafDC = (string)xElement.Element("Altele").Element("Traf_DCDC");
+                        oraTrafDC = (string)xElement.Element("oraAsamblare").Element("oraTraf_DCDC");
                         txtTDCDC.Text = uti.TrafDC;
                         txtTDCDC.BackColor = Color.LightGreen;
                         txtTDCDC.ReadOnly = true;
@@ -339,9 +339,8 @@ namespace OBCtracerB3_20230806
             }
             Utilitati uti4 = new Utilitati(int.Parse(txtNrProdus.Text), primaData, Environment.UserName, txtH.Text, 
                 txtTLLC.Text, txtTDCDC.Text, txtLV.Text, txtPC.Text, txtNC.Text, txtMIO.Text, txtMC.Text, txtPower.Text, 
-                txtFilter.Text, "bc", txtTC.Text, oraHousing, oraTrafCLC, oraTrafDC, oraLV, oraCapaP, oraCapaN, 
+                txtFilter.Text, txtBC.Text.ToString(), "TC", oraHousing, oraTrafCLC, oraTrafDC, oraLV, oraCapaP, oraCapaN, 
                 oraMicroIO, oraMicroC, oraPower, oraFilter, oraBC, oraTC);
-            MessageBox.Show("bc"+uti4.BC);
             uti4.CreezFisier();
             Application.Restart();
         }

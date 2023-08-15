@@ -125,10 +125,9 @@ namespace OBCtracerB3_20230806
             settings.IndentChars = ("    ");
             settings.CloseOutput = true;
             settings.OmitXmlDeclaration = true;
-            Console.WriteLine("bc este" + BC);
             XmlWriter writer = XmlWriter.Create(CautFisier() + "Produse\\" + NrProdus + "_OBC.xml", settings);
             writer.WriteStartDocument();
-            writer.WriteStartElement("DetaliiProdus_" + NrProdus.ToString()+"OBC_B3_11kW");
+            writer.WriteStartElement("DetaliiProdus_" + NrProdus.ToString()+"_OBC_B3_11kW");
             writer.WriteElementString("NumarProdus", NrProdus.ToString());
             writer.WriteElementString("DataAsamblare", DataAsamblare.ToString());
             writer.WriteElementString("StatieAsamblare", Environment.UserName.ToString()+"_YCT");
@@ -143,18 +142,18 @@ namespace OBCtracerB3_20230806
             writer.WriteElementString("Filter", Filter.ToString());
             writer.WriteEndElement();
 
-            writer.WriteStartElement("Altele");
+           writer.WriteStartElement("Altele");
             writer.WriteElementString("Housing", Housing.ToString());
-            writer.WriteElementString("Bottom cover", "bc");//BC.ToString());
-            writer.WriteElementString("Top cover", TC.ToString());
+            //writer.WriteElementString("Bottom cover","bc");//BC.ToString());
+          // writer.WriteElementString("Top cover", TC.ToString());
             writer.WriteElementString("Traf_CLLLC", TrafCLC.ToString());
-            writer.WriteElementString("Traf_DCDC", TrafDC.ToString());
+           writer.WriteElementString("Traf_DCDC", TrafDC.ToString());
             writer.WriteEndElement();
 
             writer.WriteStartElement("oraAsamblare");
             writer.WriteElementString("oraHousing", oraHousing.ToString());
             writer.WriteElementString("oraTraf_CLLLC", oraTrafCLC.ToString());
-            writer.WriteElementString("oraTraf_DCDC", oraTrafDC.ToString());
+           writer.WriteElementString("oraTraf_DCDC", oraTrafDC.ToString());
             writer.WriteElementString("oraLV_Iso", oraLV.ToString());
             writer.WriteElementString("oraPositive_Capacitor", oraCapaP.ToString());
             writer.WriteElementString("oraNegative_Capacitor", oraCapaN.ToString());
@@ -162,8 +161,8 @@ namespace OBCtracerB3_20230806
             writer.WriteElementString("oraMicro_Ctr", oraMicroC.ToString());
             writer.WriteElementString("oraPower", oraPower.ToString());
             writer.WriteElementString("oraFilter", oraFilter.ToString());
-            writer.WriteElementString("oraBottom cover", oraBC.ToString());
-            writer.WriteElementString("oraTop cover", oraTC.ToString());
+            //writer.WriteElementString("oraBottom cover", oraBC.ToString());
+           //writer.WriteElementString("oraTop cover", oraTC.ToString());
             writer.WriteEndElement();
             writer.WriteEndElement();
             writer.WriteEndDocument();

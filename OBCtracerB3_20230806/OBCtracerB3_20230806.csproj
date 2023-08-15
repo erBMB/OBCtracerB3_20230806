@@ -83,7 +83,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Debug\resurse\1.png" />
+    <Content Include="bin\Debug\resurse\10.PNG" />
     <Content Include="bin\Debug\resurse\11.PNG" />
+    <Content Include="bin\Debug\resurse\12.PNG" />
+    <Content Include="bin\Debug\resurse\13.PNG" />
     <Content Include="bin\Debug\resurse\2.png" />
     <Content Include="bin\Debug\resurse\22.PNG" />
     <Content Include="bin\Debug\resurse\3.png" />
@@ -94,8 +97,11 @@
     <Content Include="bin\Debug\resurse\55.PNG" />
     <Content Include="bin\Debug\resurse\6.png" />
     <Content Include="bin\Debug\resurse\66.PNG" />
+    <Content Include="bin\Debug\resurse\7.PNG" />
     <Content Include="bin\Debug\resurse\77.PNG" />
+    <Content Include="bin\Debug\resurse\8.PNG" />
     <Content Include="bin\Debug\resurse\88.PNG" />
+    <Content Include="bin\Debug\resurse\9.PNG" />
     <Content Include="bin\Debug\resurse\99.PNG" />
     <Content Include="bin\Debug\resurse\LogoCircuit.ico" />
   </ItemGroup>
