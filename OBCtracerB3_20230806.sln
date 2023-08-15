@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OBCtracerB3_20230806", "OBCtracerB3_20230806\OBCtracerB3_20230806.csproj", "{002989D1-C174-4478-9745-A4F8BBDBCA00}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{002989D1-C174-4478-9745-A4F8BBDBCA00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{002989D1-C174-4478-9745-A4F8BBDBCA00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{002989D1-C174-4478-9745-A4F8BBDBCA00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{002989D1-C174-4478-9745-A4F8BBDBCA00}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {595E6619-7EA7-4C68-ACA5-965B304FA120}
+	EndGlobalSection
+EndGlobal
